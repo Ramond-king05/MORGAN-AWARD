@@ -18,7 +18,7 @@ left, right = st.columns(2)
 
 right.write("Here's the template we'll be using:")
 
-right.image("certy.png", width=300)
+#right.image("certy.png", width=300)
 
 
 
