@@ -44,16 +44,13 @@ if submit:
         grade=f"{grade}/100",
         date=date.today().strftime("%B %d, %Y"),
     )
-    
-st.balloons()
+    st.balloons()
 
-    
-
-pdf = pdfkit.from_string(html, False)
-right.success("🎉 Your diploma was generated!")
-st.write(html, unsafe_allow_html=True)
-st.write("")
-right.download_button(
+    pdf = pdfkit.from_string(html, False)
+    right.success("🎉 Your diploma was generated!")
+    st.write(html, unsafe_allow_html=True)
+    st.write("")
+    right.download_button(
     "⬇️ Download PDF",
     data=pdf,
     file_name="MORGAN.pdf",
